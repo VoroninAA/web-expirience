@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js">
+    </script>
+    <title>Система сбора данных</title>
+    <div class="main">
+        <fieldset>
+            <legend>Показания счетчиков</legend>
+            <br>
+            Квартира: <input id="flat" type="text"><br>
+            <br>
+            <div class="boxed">
+                <fieldset>
+                    <legend>Вода</legend>
+                    <br>
+                    Показания счетчика: <input id="water" type="text"><br>
+                </fieldset>
+            </div>
+            <div class="boxed">
+                <fieldset>
+                    <legend>Электричество</legend>
+                    <br>
+                    Тариф дневной: <input id="day" type="text"> Taриф ночной: <input id="night" type="text"><br>
+                </fieldset>
+            </div>
+            <div class="boxed">
+                <fieldset>
+                    <legend>Газ</legend>
+                    <br>
+                    Показания счетчика: <input id="gas" type="text"><br>
+                </fieldset>
+            </div>
+        </fieldset>
+        <br>
+        <input class="sender" onclick="insert()" type="button" value="Отправить показания">
+        <input class="requester" onclick="queryHandbook(url)" type="button" value="Показать список показаний">
+        <input id="hider" onclick="hideTable()" type="button" value="Скрыть список показаний">
+    </div>
+
+
+</head>
+<body>
+
+<div hidden id="table_div">
+    <table id="table_data">
+    </table>
+</div>
+</body>
+</html>
+
+

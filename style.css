@@ -1,0 +1,44 @@
+
+.main {
+    margin: 0 auto;
+    width: 800px;
+    padding: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 1em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    background: #9bf3e8;
+}
+
+#table_div {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.boxed {
+    border: 1px solid #CCC;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: #d5e2d0;
+    color: #656665;
+    border: 16px solid #ECE9E0;
+    border-radius: 20px;
+}
+
+th {
+    background: #54f8ca;
+    color: #eff5f5;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+
+td {
+    background: #70f8dc;
+    padding: 10px;
+}
