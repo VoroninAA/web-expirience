@@ -1,0 +1,24 @@
+{
+  "name": "Показания счетчиков",
+  "flat": "string",
+  "resources": [
+    {
+      "name": "Вода",
+      "cold_water": "number",
+      "hot_water": "number"
+    },
+    {
+      "name": "Электричество",
+      "daylight": "number",
+      "nightlight": "number"
+    },
+    {
+      "name": "Газ",
+      "gas_meter": "number"
+    },
+    {
+      "name": "Отопление",
+      "heat_meter": "number"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Показания счетчиков",
+  "flat": "string",
+  "resources": [
+    {
+      "name": "Вода",
+      "water_meter": "number"
+    },
+    {
+      "name": "Электричество",
+      "daylight": "number",
+      "nightlight": "number"
+    },
+    {
+      "name": "Газ",
+      "gas_meter": "number"
+    }
+  ]
+}

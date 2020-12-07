@@ -1,0 +1,31 @@
+{
+  "name": "Показания счетчиков",
+  "flat": "string",
+  "resources": [
+    {
+      "name": "Вода",
+      "water_meter": "number"
+    },
+    {
+      "name": "Электричество",
+      "daylight": "number",
+      "nightlight": "number"
+    },
+    {
+      "name": "Газ",
+      "gas_meter": "number"
+    },
+    {
+      "name": "Отопление",
+      "heat_meter": "number"
+    },
+    {
+      "name": "Количество людей в квартире",
+      "count": "number"
+    },
+    {
+      "name": "Количество приборов в сети",
+      "devicecount": "number"
+    }
+  ]
+}

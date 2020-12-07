@@ -1,3 +1,20 @@
+#config {
+    margin: 0 auto;
+    width: 800px;
+    padding: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 1em;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    background: #9bf3e8;
+}
+
+.btn-container {
+    width: 260px;
+}
+
+#list {
+    margin: 0 auto;
+}
 
 .main {
     margin: 0 auto;

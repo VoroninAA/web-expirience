@@ -7,44 +7,20 @@
     <script src="script.js">
     </script>
     <title>Система сбора данных</title>
-    <div class="main">
-        <fieldset>
-            <legend>Показания счетчиков</legend>
-            <br>
-            Квартира: <input id="flat" type="text"><br>
-            <br>
-            <div class="boxed">
-                <fieldset>
-                    <legend>Вода</legend>
-                    <br>
-                    Показания счетчика: <input id="water" type="text"><br>
-                </fieldset>
-            </div>
-            <div class="boxed">
-                <fieldset>
-                    <legend>Электричество</legend>
-                    <br>
-                    Тариф дневной: <input id="day" type="text"> Taриф ночной: <input id="night" type="text"><br>
-                </fieldset>
-            </div>
-            <div class="boxed">
-                <fieldset>
-                    <legend>Газ</legend>
-                    <br>
-                    Показания счетчика: <input id="gas" type="text"><br>
-                </fieldset>
-            </div>
-        </fieldset>
-        <br>
-        <input class="sender" onclick="insert()" type="button" value="Отправить показания">
-        <input class="requester" onclick="queryHandbook(url)" type="button" value="Показать список показаний">
-        <input id="hider" onclick="hideTable()" type="button" value="Скрыть список показаний">
+    <div class="main" id=form>
     </div>
 
 
 </head>
-<body>
+<body onload="initialLoad()">
+<div id="config">
+    <input class="btn-container" onclick="insert()" type="button" value="Отправить показания">
+    <input class="btn-container" id="hider" onclick="showTable()" type="button" value="Показания">
 
+    <input class="btn-container" onclick="getConfigs()" type="button" value="Сменить конфигурацию">
+    <select id="list" onchange="changeConfig(this.value)" required="required" style="display: none; left: 50px;">
+    </select>
+</div>
 <div hidden id="table_div">
     <table id="table_data">
     </table>
